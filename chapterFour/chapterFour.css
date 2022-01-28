@@ -1,0 +1,47 @@
+.block {
+  display: flex;
+  margin: 10px;
+  width: fit-content;
+  justify-content: center;
+}
+
+.form {
+  display: flex;
+  align-items: center;
+}
+.flex__column {
+  display: flex;
+  flex-direction: column;
+}
+
+.button {
+  margin: 10px 0;
+  background-color: blueviolet;
+  color: antiquewhite;
+  border-radius: 15px;
+  font-size: 15px;
+  padding: 10px;
+  transition: all 0.2s;
+  align-self: flex-end;
+}
+.button:hover {
+  background-color: rgb(181, 109, 248);
+}
+
+input {
+  border: 1px solid black;
+  border-radius: 15px;
+  padding: 10px;
+}
+
+.invisible {
+  display: none;
+}
+
+.list__item {
+  list-style: decimal;
+}
+
+#btn__computeInterest {
+  align-self: center;
+}

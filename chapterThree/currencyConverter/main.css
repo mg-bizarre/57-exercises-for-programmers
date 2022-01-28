@@ -1,0 +1,32 @@
+body {
+  position: relative;
+}
+
+.container {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  top: 35%;
+}
+
+.input__block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
+
+.input__converter {
+  border: 1px black solid;
+  padding: 10px;
+  font-size: 20px;
+  margin: 10px;
+  width: 300px;
+  max-width: 100%;
+  border-radius: 15px;
+}
+.select__converter {
+  padding: 5px;
+  margin: 10px;
+  max-height: 30px;
+}

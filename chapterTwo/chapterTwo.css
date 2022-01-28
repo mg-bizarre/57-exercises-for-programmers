@@ -1,0 +1,27 @@
+.block {
+  display: flex;
+  margin: 20px;
+}
+
+.button {
+  margin: 10px 0;
+  background-color: blueviolet;
+  color: antiquewhite;
+  border-radius: 15px;
+  font-size: 15px;
+  padding: 5px;
+  transition: all 0.2s;
+}
+.button:hover {
+  background-color: rgb(181, 109, 248);
+}
+
+input {
+  border: 1px solid black;
+  border-radius: 15px;
+  padding: 10px;
+}
+
+.input__block {
+  display: flex;
+}

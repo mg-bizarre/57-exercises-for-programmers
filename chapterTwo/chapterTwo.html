@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../adjustment.css" />
+    <link rel="stylesheet" href="chapterTwo.css" />
+    <title>Excercises: Chapter 2</title>
+  </head>
+  <body>
+    <div class="block">
+      <form id="formRetirement">
+        <div>
+          <div class="input__retirement__block">
+            What is your current age?
+            <input name="inputCurrentAge" class="input__retirement" type="text" />
+          </div>
+          <div class="input__retirement__block">
+            At what age would you like to retire?
+            <input name="inputAgeRetirement" class="input__retirement" type="text" />
+          </div>
+          <button id="btn__retirement" class="button">Calculate</button>
+        </div>
+        <div id="retirementStatement"></div>
+      </form>
+    </div>
+    <div class="block">
+      <form id="formSimpleMath">
+        <div>
+          <input name="inputNumberOne" class="input__num" type="text" placeholder="Enter the first number" />
+          <input name="inputNumberTwo" class="input__num" type="text" placeholder="Enter the second number" />
+          <button id="btn__simpleMath" class="button">Submit</button>
+        </div>
+        <div id="simpleMathCalculations"></div>
+      </form>
+    </div>
+    <div class="block">
+      <button id="btn__madLib" class="button">Play Mad Lib</button>
+      <div id="madLib"></div>
+    </div>
+    <div class="block">
+      <button id="btn__getQuote" class="button">Get a quote</button>
+      <ul id="list__quotes"></ul>
+    </div>
+    <div class="block">
+      <button id="btn__charLength" class="button">Find the character length</button>
+      <ul id="list__strings"></ul>
+    </div>
+    <div class="block">
+      <form>
+        <input id="inputCharCount" class="input" type="text" />
+        <div id="charCounter">Number of characters:</div>
+      </form>
+    </div>
+    <div class="block">
+      <button id="btn__tellmyname" class="button">Tell my name</button>
+      <ul id="list__names"></ul>
+    </div>
+  </body>
+  <script src="chapterTwo.js"></script>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../adjustment.css" />
+    <link rel="stylesheet" href="chapterThree.css" />
+    <title>Excercises: Chapter 3</title>
+  </head>
+  <body>
+    <div>
+      <form class="block flex__column">
+        <h3>Computing Interest</h3>
+        <div class="block">
+          <div class="block flex__column">
+            <div class="input__block">
+              <div>What is the principal amount?</div>
+              <input type="text" id="inputPrincipal" class="input__interest" placeholder="Enter a number" />
+            </div>
+            <div class="input__block">
+              <div>What is the rate?</div>
+              <input type="text" id="inputInterest" class="input__interest" placeholder="Enter a number" />
+            </div>
+          </div>
+          <div class="block flex__column">
+            <div class="input__block">
+              <div>What is the number of years?</div>
+              <input type="text" id="inputYears" class="input__interest" placeholder="Enter a number" />
+            </div>
+            <div class="input__block">
+              <div>What is the number of times the interest is compounded per year?</div>
+              <input type="text" id="inputCompounded" class="input__interest" placeholder="Enter a number" />
+            </div>
+          </div>
+        </div>
+        <button id="btn__computeInterest" class="button" type="button">Compute</button>
+      </form>
+      <div id="interestStatement"></div>
+    </div>
+    <div class="flex__column block">
+      <div>Checkout</div>
+      <form class="form" id="formCheckout">
+        <div id="blockCheckout" class="input__block">
+          <input id="inputPrice" class="input__item" type="text" placeholder="price" />
+          <input id="inputQuantity" class="input__item" type="text" placeholder="quantity" />
+        </div>
+        <button id="btn__addItem" class="button">Add item</button>
+      </form>
+      <div>
+        <ol id="listCheckout"></ol>
+      </div>
+      <div id="checkoutStatement"></div>
+    </div>
+    <div class="flex__column block">
+      <div>Calculate the area of your room.</div>
+      <form class="form" id="formRoomArea">
+        <div id="blockRectangular" class="input__block">
+          <input id="inputLength" class="input__roomArea" type="text" placeholder="length" />
+          <input id="inputWidth" class="input__roomArea" type="text" placeholder="width" />
+        </div>
+        <div id="blockRound" class="input__block invisible">
+          <input id="roundWidth" class="input__roomArea" type="text" placeholder="width" />
+        </div>
+        <select id="measure">
+          <option value="feet">feet</option>
+          <option value="meters" selected="selected">meters</option>
+        </select>
+        <select id="select__roomShape">
+          <option value="rectangular" selected="selected">rectangular</option>
+          <option value="round">round</option>
+        </select>
+      </form>
+      <div id="roomAreaStatement"></div>
+      <div id="paintStatement"></div>
+    </div>
+    <div class="block">
+      <form id="formPizza">
+        <div>
+          <div class="input__pizza__block">
+            How many people?
+            <input name="inputPeopleCount" class="input__pizza" type="text" />
+          </div>
+          <div class="input__pizza__block">
+            How many pizzas do you have?
+            <input name="inputPizzaCount" class="input__pizza" type="text" />
+          </div>
+          <button id="btn__pizza" class="button">Calculate</button>
+        </div>
+        <div id="pizzaStatement"></div>
+        <div id="pizzaPieces"></div>
+        <div id="pizzaLeftovers"></div>
+      </form>
+    </div>
+  </body>
+  <script src="computeInterest.js" type="module"></script>
+  <script src="pizzaParty.js" type="module"></script>
+  <script src="roomArea.js" type="module"></script>
+  <script src="selfCheckout.js" type="module"></script>
+</html>
