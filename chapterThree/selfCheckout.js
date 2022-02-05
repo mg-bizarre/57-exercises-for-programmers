@@ -1,4 +1,4 @@
-import enterPositiveNumbersOnly from './module.js';
+import enterPositiveNumbersOnly from '../module.js';
 enterPositiveNumbersOnly('.input__item');
 
 const addItem = document.getElementById('btn__addItem');

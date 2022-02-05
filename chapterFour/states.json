@@ -1,0 +1,252 @@
+let states = [
+  {
+    "name": "Alabama",
+    "abr": "AL",
+    "tax": "4.5"
+  },
+  {
+    "name": "Alaska",
+    "abr": "AK",
+    "tax": "3.5"
+  },
+  {
+    "name": "Arizona",
+    "abr": "AZ",
+    "tax": "5.4"
+  },
+  {
+    "name": "Arkansas",
+    "abr": "AR",
+    "tax": "5.7"
+  },
+  {
+    "name": "California",
+    "abr": "CA",
+    "tax": "5.3"
+  },
+  {
+    "name": "Colorado",
+    "abr": "CO",
+    "tax": "5.8"
+  },
+  {
+    "name": "Connecticut",
+    "abr": "CT",
+    "tax": "5.4"
+  },
+  {
+    "name": "Delaware",
+    "abr": "DE",
+    "tax": "5.3"
+  },
+  {
+    "name": "Florida",
+    "abr": "FL",
+    "tax": "5.2"
+  },
+  {
+    "name": "Georgia",
+    "abr": "GA",
+    "tax": "5.1"
+  },
+  {
+    "name": "Hawaii",
+    "abr": "HI",
+    "tax": "5.0"
+  },
+  {
+    "name": "Idaho",
+    "abr": "ID",
+    "tax": "4.4"
+  },
+  {
+    "name": "Illinois",
+    "abr": "IL",
+    "tax": "4.3"
+  },
+  {
+    "name": "Indiana",
+    "abr": "IN",
+    "tax": "4.8"
+  },
+  {
+    "name": "Iowa",
+    "abr": "IA",
+    "tax": "7.0"
+  },
+  {
+    "name": "Kansas",
+    "abr": "KS",
+    "tax": "6.0"
+  },
+  {
+    "name": "Kentucky",
+    "abr": "KY",
+    "tax": "6.1"
+  },
+  {
+    "name": "Louisiana",
+    "abr": "LA",
+    "tax": "5.9"
+  },
+  {
+    "name": "Maine",
+    "abr": "ME",
+    "tax": "5.8"
+  },
+  {
+    "name": "Maryland",
+    "abr": "MD",
+    "tax": "4.8"
+  },
+  {
+    "name": "Massachusetts",
+    "abr": "MA",
+    "tax": "7.1"
+  },
+  {
+    "name": "Michigan",
+    "abr": "MI",
+    "tax": "6.9"
+  },
+  {
+    "name": "Minnesota",
+    "abr": "MN",
+    "tax": "5.3"
+  },
+  {
+    "name": "Mississippi",
+    "abr": "MS",
+    "tax": "5.0"
+  },
+  {
+    "name": "Missouri",
+    "abr": "MO",
+    "tax": "4.9"
+  },
+  {
+    "name": "Montana",
+    "abr": "MT",
+    "tax": "3.5"
+  },
+  {
+    "name": "Nebraska",
+    "abr": "NE",
+    "tax": "3.9"
+  },
+  {
+    "name": "Nevada",
+    "abr": "NV",
+    "tax": "3.8"
+  },
+  {
+    "name": "New Hampshire",
+    "abr": "NH",
+    "tax": "4.2"
+  },
+  {
+    "name": "New Jersey",
+    "abr": "NJ",
+    "tax": "3.6"
+  },
+  {
+    "name": "New Mexico",
+    "abr": "NM",
+    "tax": "3.7"
+  },
+  {
+    "name": "New York",
+    "abr": "NY",
+    "tax": "5.1"
+  },
+  {
+    "name": "North Carolina",
+    "abr": "NC",
+    "tax": "3.8"
+  },
+  {
+    "name": "North Dakota",
+    "abr": "ND",
+    "tax": "3.4"
+  },
+  {
+    "name": "Ohio",
+    "abr": "OH",
+    "tax": "4.0"
+  },
+  {
+    "name": "Oklahoma",
+    "abr": "OK",
+    "tax": "6.3"
+  },
+  {
+    "name": "Oregon",
+    "abr": "OR",
+    "tax": "6.6"
+  },
+  {
+    "name": "Pennsylvania",
+    "abr": "PA",
+    "tax": "6.7"
+  },
+  {
+    "name": "Rhode Island",
+    "abr": "RI",
+    "tax": "6.8"
+  },
+  {
+    "name": "South Carolina",
+    "abr": "SC",
+    "tax": "5.4"
+  },
+  {
+    "name": "South Dakota",
+    "abr": "SD",
+    "tax": "5.0"
+  },
+  {
+    "name": "Tennessee",
+    "abr": "TN",
+    "tax": "5.4"
+  },
+  {
+    "name": "Texas",
+    "abr": "TX",
+    "tax": "5.3"
+  },
+  {
+    "name": "Utah",
+    "abr": "UT",
+    "tax": "2.9"
+  },
+  {
+    "name": "Vermont",
+    "abr": "VT",
+    "tax": "5.6"
+  },
+  {
+    "name": "Virginia",
+    "abr": "VA",
+    "tax": "5.7"
+  },
+  {
+    "name": "Washington",
+    "abr": "WA",
+    "tax": "5.9"
+  },
+  {
+    "name": "West Virginia",
+    "abr": "WV",
+    "tax": "5.8"
+  },
+  {
+    "name": "Wisconsin",
+    "abr": "WI",
+    "tax": "5.5"
+  },
+  {
+    "name": "Wyoming",
+    "abr": "WY",
+    "tax": "5.0"
+  }
+]
