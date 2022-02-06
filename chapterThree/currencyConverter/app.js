@@ -1,4 +1,4 @@
-import enterPositiveNumbersOnly from '../module';
+import enterPositiveNumbersOnly from '../module.js';
 enterPositiveNumbersOnly('.input__converter');
 
 const selectFirst = document.getElementById('selectFirst');

@@ -10,6 +10,23 @@
   </head>
   <body>
     <div>
+      <h3>Temperature converter</h3>
+      <form>
+        <div class="input__block">
+          <input id="inputC" type="text" class="input__tconverter" />
+          <label for="inputC">Celsius</label>
+        </div>
+        <div class="input__block">
+          <input id="inputF" type="text" class="input__tconverter" />
+          <label for="inputF">Fahrenheit</label>
+        </div>
+        <div class="input__block">
+          <input id="inputK" type="text" class="input__tconverter" />
+          <label for="inputK">Kelvin</label>
+        </div>
+      </form>
+    </div>
+    <div>
       <form class="block flex__column">
         <h3>Tax calculator</h3>
         <div class="block flex__column">
@@ -26,7 +43,20 @@
       </form>
       <div class="block" id="taxStatement"></div>
     </div>
+    <div>
+      <form class="block flex__column">
+        <h3>Password Validation</h3>
+        <div class="block flex__column">
+          <input type="text" id="username" class="input__pass" placeholder="username" />
+          <input type="password" id="password" class="input__pass" placeholder="password" />
+        </div>
+        <button type="button" id="btn-pass" class="button">Log in</button>
+      </form>
+      <div class="block" id="logInStatement"></div>
+    </div>
   </body>
-  <script type="text/javascript" src="states.json"></script>
+  <script type="text/javascript" src="data.json"></script>
+  <script src="temperatureConverter.js" type="module"></script>
+  <script src="passwordValidation.js" type="module"></script>
   <script src="taxCalculator.js" type="module"></script>
 </html>

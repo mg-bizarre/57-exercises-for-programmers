@@ -1,3 +1,14 @@
+let users = [
+  {
+    "username": "Masha",
+    "password": "abc$123"
+  },
+  {
+    "username": "Masha2",
+    "password": "dfvgr!4"
+  }
+]
+
 let states = [
   {
     "name": "Alabama",

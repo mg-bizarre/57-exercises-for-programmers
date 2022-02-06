@@ -135,7 +135,3 @@ section,
 footer {
   flex-shrink: 0;
 }
-
-@function rem($px) {
-  @return $px / 16px + 0rem;
-}
