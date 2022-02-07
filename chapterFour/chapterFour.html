@@ -9,53 +9,83 @@
     <title>Excercises: Chapter 4</title>
   </head>
   <body>
-    <div>
-      <h3>Temperature converter</h3>
-      <form>
-        <div class="input__block">
-          <input id="inputC" type="text" class="input__tconverter" />
-          <label for="inputC">Celsius</label>
-        </div>
-        <div class="input__block">
-          <input id="inputF" type="text" class="input__tconverter" />
-          <label for="inputF">Fahrenheit</label>
-        </div>
-        <div class="input__block">
-          <input id="inputK" type="text" class="input__tconverter" />
-          <label for="inputK">Kelvin</label>
-        </div>
-      </form>
-    </div>
-    <div>
-      <form class="block flex__column">
-        <h3>Tax calculator</h3>
-        <div class="block flex__column">
-          <div class="input__block">
-            <div>What is the order amount?</div>
-            <input type="text" id="inputOrder" class="input__taxCalc numbers-only" placeholder="Enter your amount" />
+    <div class="container">
+      <div class="slider__container">
+        <h3>Calculate your BMI</h3>
+        <select class="slider__select" id="measure">
+          <option value="metric" selected="selected">metric</option>
+          <option value="imperial">imperial</option>
+        </select>
+        <div class="block">
+          <div class="slide__block">
+            <div>Your weight</div>
+            <label for="sliderWeight" id="labelWeight" class="slider__label"></label>
+            <input type="range" min="30" max="150" value="70" class="slider" id="sliderWeight" />
           </div>
-          <div class="input__block">
-            <div>What is the state?</div>
-            <input type="text" id="inputState" class="input__taxCalc" placeholder="Enter the state" />
+          <div class="slide__block">
+            <div>Your height</div>
+            <label for="sliderHeight" id="labelHeight" class="slider__label"></label>
+            <input type="range" min="50" max="250" value="170" class="slider" id="sliderHeight" />
           </div>
         </div>
-        <button type="button" id="btn-taxCalc" class="button">Calculate</button>
-      </form>
-      <div class="block" id="taxStatement"></div>
-    </div>
-    <div>
-      <form class="block flex__column">
-        <h3>Password Validation</h3>
-        <div class="block flex__column">
-          <input type="text" id="username" class="input__pass" placeholder="username" />
-          <input type="password" id="password" class="input__pass" placeholder="password" />
+        <div id="BMI"></div>
+      </div>
+      <div>
+        <div>
+          <h3>Temperature converter</h3>
+          <form>
+            <div class="input__block">
+              <input id="inputC" type="text" class="input__tconverter" />
+              <label for="inputC">Celsius</label>
+            </div>
+            <div class="input__block">
+              <input id="inputF" type="text" class="input__tconverter" />
+              <label for="inputF">Fahrenheit</label>
+            </div>
+            <div class="input__block">
+              <input id="inputK" type="text" class="input__tconverter" />
+              <label for="inputK">Kelvin</label>
+            </div>
+          </form>
         </div>
-        <button type="button" id="btn-pass" class="button">Log in</button>
-      </form>
-      <div class="block" id="logInStatement"></div>
+        <div>
+          <form class="block flex__column">
+            <h3>Tax calculator</h3>
+            <div class="block flex__column">
+              <div class="input__block">
+                <div>What is the order amount?</div>
+                <input
+                  type="text"
+                  id="inputOrder"
+                  class="input__taxCalc numbers-only"
+                  placeholder="Enter your amount"
+                />
+              </div>
+              <div class="input__block">
+                <div>What is the state?</div>
+                <input type="text" id="inputState" class="input__taxCalc" placeholder="Enter the state" />
+              </div>
+            </div>
+            <button type="button" id="btn-taxCalc" class="button">Calculate</button>
+          </form>
+          <div class="block" id="taxStatement"></div>
+        </div>
+        <div>
+          <form class="block flex__column">
+            <h3>Password Validation</h3>
+            <div class="block flex__column">
+              <input type="text" id="username" class="input__pass" placeholder="username" />
+              <input type="password" id="password" class="input__pass" placeholder="password" />
+            </div>
+            <button type="button" id="btn-pass" class="button">Log in</button>
+          </form>
+          <div class="block" id="logInStatement"></div>
+        </div>
+      </div>
     </div>
   </body>
   <script type="text/javascript" src="data.json"></script>
+  <script src="BMICalculator.js" type="module"></script>
   <script src="temperatureConverter.js" type="module"></script>
   <script src="passwordValidation.js" type="module"></script>
   <script src="taxCalculator.js" type="module"></script>
