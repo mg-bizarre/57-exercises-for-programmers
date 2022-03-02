@@ -10,27 +10,31 @@
   </head>
   <body>
     <div class="container">
-      <div class="slider__container">
-        <h3>Calculate your BMI</h3>
-        <select class="slider__select" id="measure">
-          <option value="metric" selected="selected">metric</option>
-          <option value="imperial">imperial</option>
-        </select>
-        <div class="block">
-          <div class="slide__block">
-            <div>Your weight</div>
-            <label for="sliderWeight" id="labelWeight" class="slider__label"></label>
-            <input type="range" min="30" max="150" value="70" class="slider" id="sliderWeight" />
+      <div class="column__container">
+        <div class="flex__column">
+          <div class="flex__column">
+            <h3>Calculate your BMI</h3>
+            <select class="slider__select" id="measure">
+              <option value="metric" selected="selected">metric</option>
+              <option value="imperial">imperial</option>
+            </select>
           </div>
-          <div class="slide__block">
-            <div>Your height</div>
-            <label for="sliderHeight" id="labelHeight" class="slider__label"></label>
-            <input type="range" min="50" max="250" value="170" class="slider" id="sliderHeight" />
+          <div class="block">
+            <div class="slide__block">
+              <div>Your weight</div>
+              <label for="sliderWeight" id="labelWeight" class="slider__label"></label>
+              <input type="range" min="30" max="150" value="70" class="slider" id="sliderWeight" />
+            </div>
+            <div class="slide__block">
+              <div>Your height</div>
+              <label for="sliderHeight" id="labelHeight" class="slider__label"></label>
+              <input type="range" min="50" max="250" value="170" class="slider" id="sliderHeight" />
+            </div>
           </div>
+          <div id="BMI"></div>
         </div>
-        <div id="BMI"></div>
       </div>
-      <div>
+      <div class="column__container">
         <div>
           <h3>Temperature converter</h3>
           <form>
@@ -51,7 +55,7 @@
         <div>
           <form class="block flex__column">
             <h3>Tax calculator</h3>
-            <div class="block flex__column">
+            <div class="flex__column">
               <div class="input__block">
                 <div>What is the order amount?</div>
                 <input
@@ -70,6 +74,8 @@
           </form>
           <div class="block" id="taxStatement"></div>
         </div>
+      </div>
+      <div class="column__container">
         <div>
           <form class="block flex__column">
             <h3>Password Validation</h3>
@@ -81,11 +87,21 @@
           </form>
           <div class="block" id="logInStatement"></div>
         </div>
+        <form class="flex__column">
+          <div>
+            <label for="languages" id="labelChooseLang"></label>
+            <select name="languages" id="languages"></select>
+          </div>
+          <label for="monthInput" id="labelInput"></label>
+          <input type="text" id="monthInput" class="month__input" />
+          <div id="monthsStatement"></div>
+        </form>
       </div>
     </div>
   </body>
   <script type="text/javascript" src="data.json"></script>
   <script src="BMICalculator.js" type="module"></script>
+  <script src="numbersToNames.js" type="module"></script>
   <script src="temperatureConverter.js" type="module"></script>
   <script src="passwordValidation.js" type="module"></script>
   <script src="taxCalculator.js" type="module"></script>
